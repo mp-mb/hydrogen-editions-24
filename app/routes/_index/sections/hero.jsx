@@ -26,7 +26,7 @@ export default function Hero() {
               color='white'
               style={{ height: 106 }}
             >
-              Essentials
+              Amazing things
             </Heading>
           </div>
           <Button to='/products/builder-tote'>
