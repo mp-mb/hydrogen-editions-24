@@ -32,7 +32,9 @@
     "react-use": "^17.5.0",
     "tailwind-merge": "^2.3.0",
     "typographic-base": "^1.0.4",
-    "utopia-api": "^0.5.2"
+    "utopia-api": "^0.5.2",
+    "tailwindcss": "3.4.4",
+    "postcss": "8.4.38"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "5.0.2",
