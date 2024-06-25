@@ -1,10 +1,10 @@
+import { Column } from '@h2/new/Layout'
 import { useLoaderData } from '@remix-run/react'
 import { json } from '@shopify/remix-oxygen'
-import { Column } from '@h2/new/Layout'
-import Hero from './sections/hero'
 import BestSellers from './sections/best-sellers'
 import Collections from './sections/collections'
 import FeaturedProducts from './sections/featured-products'
+import Hero from './sections/hero'
 import OurPromise from './sections/our-promise'
 
 /**

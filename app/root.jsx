@@ -1,21 +1,21 @@
-import { useNonce } from '@shopify/hydrogen'
-import { defer } from '@shopify/remix-oxygen'
 import {
+  isRouteErrorResponse,
+  Links,
+  LiveReload,
   Meta,
   Outlet,
   Scripts,
-  LiveReload,
+  ScrollRestoration,
+  useLoaderData,
   useMatches,
   useRouteError,
-  useLoaderData,
-  ScrollRestoration,
-  isRouteErrorResponse,
-  Links,
 } from '@remix-run/react'
+import { useNonce } from '@shopify/hydrogen'
+import { defer } from '@shopify/remix-oxygen'
 import favicon from '/app/assets/favicon.svg'
 
-import './styles/app-generated.css'
 import { Layout } from '~/components/Layout'
+import './styles/app-generated.css'
 
 /**
  * This is important to avoid re-fetching root queries on sub-navigations
@@ -110,7 +110,6 @@ export async function loader({ context }) {
 }
 
 export default function App() {
-  const nonce = useNonce()
   const data = useLoaderData()
 
   return (
